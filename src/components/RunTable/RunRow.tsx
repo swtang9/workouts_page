@@ -35,7 +35,7 @@ const RunRow = ({ elementIndex, locateActivity, run, runIndex, setRunIndex }: IR
       style={{color: colorFromType(type)}}
     >
       <td>{titleForRun(run)}</td>
-      <td>{type}</td>
+      {/* <td>{type}</td> */}
       <td>{distance}</td>
       {SHOW_ELEVATION_GAIN && <td>{elevation_gain}</td>}
       <td>{paceParts}</td>
