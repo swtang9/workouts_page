@@ -542,5 +542,21 @@
 "elevation_gain": 20.35887705981729,
 "source": "Keep",
 "streak": 3
+},
+{
+"run_id": 9223370288004232907,
+"name": "Walk from keep",
+"distance": 124.12745599887005,
+"moving_time": "0:01:55",
+"type": "Hike",
+"start_date": "2025-06-02 07:46:36",
+"start_date_local": "2025-06-02 15:46:36",
+"location_country": "{'latitude': 22.701166082597883, 'longitude': 114.40169948710175, 'country': '\u4e2d\u56fd', 'nationCode': '156', 'province': '\u5e7f\u4e1c\u7701', 'city': '\u6df1\u5733\u5e02', 'cityCode': '0755', 'district': '\u576a\u5c71\u533a', 'districtCode': '440310', 'startLatitude': 22.701166582497706, 'startLongitude': 114.40170166564927}",
+"summary_polyline": "ejqiCmbfyTHG?R??GM",
+"average_heartrate": null,
+"average_speed": 1.07936918259887,
+"elevation_gain": 1.0004814770529649,
+"source": "Keep",
+"streak": 4
 }
 ]
