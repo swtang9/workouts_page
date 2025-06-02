@@ -28,7 +28,7 @@
 } 
 
 .selected {
-  color: rgb(224, 237, 94);
+  color: red !important;
 }
 
 .runTitle {
