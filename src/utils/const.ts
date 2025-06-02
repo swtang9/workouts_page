@@ -56,7 +56,7 @@ const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string =>
   `户外运动 ${yearLength} 年 ` + ( year === 'Total' ? '' : `，地图展示的是 ${year} 年的轨迹`);
 
 const ENGLISH_INFO_MESSAGE = (yearLength: number, year: string): string =>
-  `Logged ${yearLength} Years of Outdoor Journey` +  ( year === 'Total' ? '' : `, the map show routes in ${year}`);
+  `I've been using Keep to track my fitness journey over the past ${yearLength} years` +  ( year === 'Total' ? '' : `, and the map here shows the routes I've traveled in ${year}`);
 
 // not support English for now
 const CHINESE_LOCATION_INFO_MESSAGE_FIRST =

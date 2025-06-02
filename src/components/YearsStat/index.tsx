@@ -17,7 +17,6 @@ const YearsStat = ({ year, onClick }: { year: string, onClick: (_year: string) =
       <p style={quoteStyle}>&ndash; &ndash; Keep going & Fight on!</p>
       <br />
       <br />
-      <br />
         <p className="leading-relaxed">
           {INFO_MESSAGE(years.length, year)}
           <br />
