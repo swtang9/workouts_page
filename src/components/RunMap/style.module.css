@@ -15,19 +15,20 @@
   padding-right: 70px;
 }
 
+/* 年份的字体 */
 .button {
   display: inline-block;
   position: relative;
   cursor: pointer;
   padding: 1.3rem 0.4rem;
-  margin-top: 0.1rem;
-  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-size: 2rem;
   text-align: center;
   color: rgb(204, 204, 204);
-}
+} 
 
 .selected {
-  color: rgb(0,237,94);
+  color: red !important;
 }
 
 .runTitle {
