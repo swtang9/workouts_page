@@ -3,8 +3,8 @@
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4 * * *'  #北京时间0点
-    - cron: '0 16 * * *' #北京时间0点
+    - cron: '0 8 * * *'   # 洛杉矶时间 凌晨0点（标准时间）
+    - cron: '0 20 * * *'  # 洛杉矶时间 中午12点（标准时间）
   push:
     branches:
       - master
