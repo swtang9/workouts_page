@@ -56,7 +56,7 @@ const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string =>
   `户外运动 ${yearLength} 年 ` + ( year === 'Total' ? '' : `，地图展示的是 ${year} 年的轨迹`);
 
 const ENGLISH_INFO_MESSAGE = (yearLength: number, year: string): string =>
-  `I've been using Keep to track my fitness journey over the past ${yearLength} years` +  ( year === 'Total' ? '' : `, and the map here shows the routes I've traveled in ${year}.`);
+  `I've been using Keep/Strava to track my fitness journey over the past ${yearLength} years` +  ( year === 'Total' ? '' : `, and the map here shows the routes I've traveled in ${year}.`);
 
 // not support English for now
 const CHINESE_LOCATION_INFO_MESSAGE_FIRST =
@@ -80,6 +80,7 @@ const SKI_TITLE = IS_CHINESE ? '双板滑雪' : 'Ski';
 const ROAD_TRIP_TITLE = IS_CHINESE ? '自驾' : 'RoadTrip';
 const FLIGHT_TITLE = IS_CHINESE ? '飞行' : 'Flight';
 const RUN_TREADMILL_TITLE = IS_CHINESE ? '跑步机' : 'Treadmill Run';
+const WALK_TITLE = IS_CHINESE ? '步行' : 'Walk';
 
 const ACTIVITY_COUNT_TITLE = IS_CHINESE ? '活动次数' : 'Activity Count';
 const MAX_DISTANCE_TITLE = IS_CHINESE ? '最远距离' : 'Max Distance';
@@ -111,6 +112,7 @@ const RUN_TITLES = {
   ROAD_TRIP_TITLE,
   FLIGHT_TITLE,
   RUN_TREADMILL_TITLE,
+  WALK_TITLE,
 };
 
 const TYPES_MAPPING = {
@@ -125,6 +127,7 @@ const TYPES_MAPPING = {
   'snowboard': RUN_TITLES.SNOWBOARD_TITLE,
   'ski': RUN_TITLES.SKI_TITLE,
   'roadtrip': RUN_TITLES.ROAD_TRIP_TITLE,
+  'walk': RUN_TITLES.WALK_TITLE,
 }
 
 const ACTIVITY_TOTAL = {
@@ -194,3 +197,4 @@ export const COUNTRY_FILL_COLOR = dark_vanilla;
 export const KAYAKING_COLOR = red;
 export const SNOWBOARD_COLOR = dark_vanilla;
 export const TRAIL_RUN_COLOR = IKB;
+export const WALK_COLOR = cyan;
