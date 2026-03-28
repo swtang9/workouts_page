@@ -57,7 +57,7 @@ const titleForShow = (run: Activity): string => {
 };
 
 const formatPace = (d: number): string => {
-  if (Number.isNaN(d) || d == 0) return '0';
+  if (!d || Number.isNaN(d) || d == 0) return '0';
   const pace = (1000.0 / 60.0) * (1.0 / d);
   const minutes = Math.floor(pace);
   const seconds = Math.floor((pace - minutes) * 60.0);
@@ -194,8 +194,8 @@ const locationForRun = (
 };
 
 const intComma = (x = '') => {
-  if (x === null || x === undefined) {
-    return '';
+if (x === null || x === undefined || Number.isNaN(x)) {
+    return '0';
   }
   if (x.toString().length <= 5) {
     return x;
