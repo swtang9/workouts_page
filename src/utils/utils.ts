@@ -194,6 +194,9 @@ const locationForRun = (
 };
 
 const intComma = (x = '') => {
+  if (x === null || x === undefined) {
+    return '';
+  }
   if (x.toString().length <= 5) {
     return x;
   }
