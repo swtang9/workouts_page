@@ -331,17 +331,25 @@ const titleForRun = (run: Activity): string => {
       return `${city} ${activity_sport}`;
     }
   }
-  // 3. use time+length if location or type is not available
-  if (type == 'Run' || type == 'Trail Run'){
-      const runDistance = run.distance / 1000;
-      if (runDistance >= 40) {
-        return RUN_TITLES.FULL_MARATHON_RUN_TITLE;
-      }
-      else if (runDistance > 20) {
-        return RUN_TITLES.HALF_MARATHON_RUN_TITLE;
-      }
+  // 3. use time period + type
+  const getTimePeriod = (dateStr: string): string => {
+    const hour = parseInt(dateStr.slice(11, 13), 10);
+    if (hour >= 6 && hour < 12) return 'Morning ';
+    if (hour >= 12 && hour < 17) return 'Afternoon ';
+    if (hour >= 17 && hour < 21) return 'Evening ';
+    return 'Night ';
+  };
+  const period = getTimePeriod(run.start_date_local);
+
+  if (type == 'Run' || type == 'Trail Run') {
+    const runDistance = run.distance / 1000;
+    if (runDistance >= 40) {
+      return `${period}${RUN_TITLES.FULL_MARATHON_RUN_TITLE}`;
+    } else if (runDistance > 20) {
+      return `${period}${RUN_TITLES.HALF_MARATHON_RUN_TITLE}`;
+    }
   }
-  return titleForType(type);
+  return `${period}${titleForType(type)}`;
 };
 
 const colorFromType = (workoutType: string): string => {
